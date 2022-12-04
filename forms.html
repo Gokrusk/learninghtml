@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form action="/index2.html" method="post">
+        <label for="personaName">Name:</label>
+        <br>
+        <input type="text" name="person" id="personName">
+        <br><br>
+        <label for="psw">Password: </label>
+        <br>
+        <input type="password" id="psw" name="psw">
+        <br><br>
+        <label for="year">Born</label>
+        <br>
+        <input type="number" id="year" step="5">
+
+        <h2>Choose</h2>
+        <label for="maths">Maths</label>
+        <input type="checkbox" name="subject" id="maths" value="maths">
+        <br>
+        <label for="physics">Physics</label>
+        <input type="checkbox" name="subject" id="physics" value="physics">
+        <br><br>
+
+        <h2>SUM</h2>
+        <input type="radio" name="sum" id="sum">
+        <label for="sum">2</label>
+        <br>
+        <input type="radio" name="sum" id="sum">
+        <label for="sum">11</label>
+
+        <h2>SELECT</h2>
+        <select name="lunch" id="lunch">
+            <option value="1">Pizza</option>
+            <option value="2">Encebollado</option>
+            <option value="3">Guatita</option>
+        </select>
+        <br><br>
+
+        <h2>CIUDADES</h2>
+        <!-- datalist -->
+        <input type="text" list="cities" id="city" name="city">
+        <datalist id="cities">
+            <option value="Tokyo"></option>
+            <option value="Esmeraldas"></option>
+            <option value="Guayaquil"></option>
+        </datalist>
+        <br><br>
+        <label for="blog"><h2>BLOG</h2></label>
+        <!-- textarea -->
+        <textarea name="blog" id="blog" cols="50" rows="10" style="resize: none;">Escribe</textarea>
+        <br><br>
+        <input type="file" name="fileupload" accept="pdf/*">
+        <br><br>
+        <input type="submit" value="enviar">
+    </form>
+    <br><br>
+</body>
+
+</html>
