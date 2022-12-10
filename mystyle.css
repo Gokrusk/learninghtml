@@ -1,0 +1,30 @@
+.paragraph11{
+    background-color: blue;
+}
+
+#p1{
+    color: red;
+}
+#p2{
+    color: yellow;
+}
+
+.paragraph22{
+    background: red;
+}
+
+#p3{
+    color: blue;
+}
+#p4{
+    color: green;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border: 5px solid blue;
+    margin: 100px auto;
+    text-align: center;;
+    border-radius: 200px;
+}
