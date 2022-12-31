@@ -1,0 +1,46 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+body{
+    margin: 0;
+    background-color: rgb(63, 62, 62);
+}
+.item{
+  width: 200px;
+  height: 200px;
+}
+#i1 {
+    background-color: orange;
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  #i2 {
+    background-color: green;
+    align-self: stretch;
+  }
+  #i3 {
+    background-color: blue;
+  }
+  .container {
+    display: grid;
+    text-align: center;
+    height: 500px;
+    border: 5px green solid;
+    grid-template-columns: repeat(3, 200px);
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(10, 1fr); */
+    grid-template-rows: repeat(3, 100px);
+    /* grid-gap: 5px; */
+    /* justify-items: center;
+    align-items: center; */
+    /* Dos valores */
+    place-items: center; 
+    /* justify-content: center; */
+    /* align-content:center; */
+    place-content: center;
+  }
+  

@@ -1,0 +1,36 @@
+#i1 {
+  background-color: orange;
+  height: 20px;
+  grid-area: header;
+}
+#i2 {
+  background-color: green;
+  grid-area: leftnav;
+}
+#i3 {
+  background-color: blue;
+  grid-area: main;
+}
+#i4 {
+  background-color: firebrick;
+  height: 20px;
+  grid-area: boot;
+}
+#i5 {
+  background-color: aqua;
+  grid-area: right;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 20px) repeat(4, 1fr) 20px;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(10, 1fr); */
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "header header header header header header header"
+    "leftnav main    main  main main main   right"
+    "leftnav main    main  main main main   right"
+    "leftnav main    main  main main main   right"
+    "boot boot    boot  boot boot   boot boot";
+    /* grid-gap: 5px; */
+}
