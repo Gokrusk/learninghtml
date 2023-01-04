@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HEY</h1>
+    <button onclick="Hello()">Alert!</button>
+    <script>
+        //arrow functions
+        const welcome = (name,lname,age) =>
+        {
+            let anio = 2023 - age
+            console.log(`Bienvenido ${name} ${lname}, naciste en ${anio}.`)
+        }
+        welcome("nigell","jama","21")
+        //array
+        let ciudad = ["rio","esme","gye"]
+        ciudad.forEach(element => {
+            console.log(element)
+        });
+        //insertar: push //quitar: pop
+        ciudad.forEach(function (element,index){
+            console.log(`${index} ${element}`)
+        })
+        const v = [1,2,3,[4,5]]
+        console.log(v[0]) //3
+        console.log(v[1][1]) //5
+        const Hello = () =>{
+            alert('Hola')
+        }
+            // document.body.innerHTML = "<h1>Hola h1 cambiado</h1/"
+            // let htmlBody = document.body
+            // htmlBody.style.backgroundColor = 'purple'
+            
+    </script>
+</body>
+</html>
